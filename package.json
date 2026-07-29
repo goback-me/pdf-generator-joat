@@ -1,0 +1,10 @@
+{
+  "name": "pdf-report-service",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.19.0",
+    "puppeteer": "^22.0.0",
+    "basic-ftp": "^5.0.0"
+  }
+}
