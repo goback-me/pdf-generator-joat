@@ -9,10 +9,12 @@ services:
       - root_default
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.pdf-report.rule=Host(`pdf-report.srv808469.hstgr.cloud`)"
+      - "traefik.http.routers.pdf-report.rule=Host(`tools.hivesocial.agency`) && PathPrefix(`/pdf`)"
       - "traefik.http.routers.pdf-report.entrypoints=websecure"
       - "traefik.http.routers.pdf-report.tls=true"
       - "traefik.http.routers.pdf-report.tls.certresolver=mytlschallenge"
+      - "traefik.http.routers.pdf-report.middlewares=pdf-stripprefix"
+      - "traefik.http.middlewares.pdf-stripprefix.stripprefix.prefixes=/pdf"
       - "traefik.http.services.pdf-report.loadbalancer.server.port=3000"
 
 networks:
