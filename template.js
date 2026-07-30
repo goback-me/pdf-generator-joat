@@ -52,38 +52,38 @@ function buildReportHtml(data) {
 
   .hero{background:#f3faf9;padding:2px 60px 2px;text-align:center;}
   .eyebrow-pill{
-    display:inline-block;background:#fff4e5;color:#b4532d;font-size:25.1px;font-weight:800;
-    line-height:28.95px;letter-spacing:-0.04em;text-align:center;text-transform:capitalize;
-    padding:4px 26px;border-radius:20px;margin-bottom:6px;
+    display:inline-block;background:#fff4e5;color:#b4532d;font-size:15px;font-weight:800;
+    line-height:18px;letter-spacing:-0.02em;text-align:center;text-transform:capitalize;
+    padding:6px 22px;border-radius:20px;margin-bottom:20px;
   }
-  .price-value{font-size:105.46px;font-weight:800;line-height:85px;letter-spacing:-0.08em;text-align:center;color:#012a67;margin-bottom:8px;}
-  .price-note{font-size:27.82px;font-weight:400;line-height:40.14px;letter-spacing:-0.02em;text-align:center;color:#001636;max-width:960px;margin:0 auto 6px;}
-  .greeting{font-size:22.82px;font-weight:400;line-height:26px;letter-spacing:-0.02em;text-align:center;color:#000;max-width:980px;margin:0 auto;}
+  .price-value{font-size:66px;font-weight:800;line-height:70px;letter-spacing:-0.03em;text-align:center;color:#012a67;margin-bottom:30px;}
+  .price-note{font-size:20px;font-weight:400;line-height:29px;letter-spacing:-0.01em;text-align:center;color:#001636;max-width:960px;margin:0 auto 20px;}
+  .greeting{font-size:18px;font-weight:400;line-height:26px;letter-spacing:-0.01em;text-align:center;color:#000;max-width:980px;margin:0 auto;}
 
-  .cta-block{background:#f3faf9;text-align:center;padding:0 56px 0;}
+  .cta-block{background:#f3faf9;text-align:center;padding:24px 68px 0;}
   .cta-pill{
-    display:block;width:100%;background:#299230;border-radius:26px;padding:10px 20px 12px;
+    display:block;width:100%;background:#299230;border-radius:26px;padding:14px 24px 16px;
     position:relative;z-index:2;margin-bottom:-30px;text-decoration:none;
   }
-  .cta-save{font-family:'Poppins','Liberation Sans','Arial',sans-serif;font-weight:400;font-size:18.37px;line-height:21.95px;letter-spacing:0;text-align:center;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:6px;}
-  .cta-main{font-family:'Poppins','Liberation Sans','Arial',sans-serif;font-weight:800;font-size:39.69px;line-height:39.91px;letter-spacing:0;text-align:center;text-transform:uppercase;color:#fff;}
+  .cta-save{font-family:'Poppins','Liberation Sans','Arial',sans-serif;font-weight:400;font-size:13px;line-height:16px;letter-spacing:0.02em;text-align:center;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:8px;}
+  .cta-main{font-family:'Poppins','Liberation Sans','Arial',sans-serif;font-weight:800;font-size:32px;line-height:36px;letter-spacing:0;text-align:center;text-transform:uppercase;color:#fff;white-space:nowrap;}
 
-  .dark-section{background:#022355;padding:40px 40px 4px;}
-  .info-card{background:#001636;border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:6px 30px 8px;margin-bottom:4px;}
+  .dark-section{background:#022355;padding:50px 40px 35px;}
+  .info-card{background:#001636;border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:18px 30px 20px;margin-bottom:20px;}
   .info-card:last-child{margin-bottom:0;}
-  .info-card h2{font-size:38.45px;font-weight:800;line-height:36px;letter-spacing:-0.02em;color:#fff;margin:0 0 4px;}
-  .info-line{font-size:15.69px;font-weight:500;line-height:19px;letter-spacing:-0.02em;color:#fff;margin-bottom:3px;}
+  .info-card h2{font-size:24px;font-weight:800;line-height:28px;letter-spacing:-0.01em;color:#fff;margin:0 0 12px;}
+  .info-line{font-size:13.5px;font-weight:500;line-height:20px;letter-spacing:-0.01em;color:#fff;margin-bottom:10px;}
   .info-line:last-child{margin-bottom:0;}
   .info-line .accent{color:#04bcff;}
   .info-line .accent-alt{color:#06a8e5;}
   .info-line .body-text{color:#fff;font-weight:400;}
   ol.why-list{margin:0;padding:0;list-style:none;counter-reset:why;}
-  ol.why-list li{counter-increment:why;font-size:15.69px;font-weight:700;line-height:19px;letter-spacing:-0.02em;color:#04bcff;margin-bottom:3px;}
+  ol.why-list li{counter-increment:why;font-size:13.5px;font-weight:700;line-height:20px;letter-spacing:-0.01em;color:#04bcff;margin-bottom:10px;}
   ol.why-list li:last-child{margin-bottom:0;}
   ol.why-list li::before{content:counter(why) ". ";}
   ol.why-list li .body-text{color:#fff;font-weight:400;}
 
-  .footer-strip{text-align:center;padding-top:1px;font-size:13.92px;font-weight:800;line-height:28.21px;letter-spacing:0;color:#ffffff;text-transform:uppercase;}
+  .footer-strip{text-align:center;padding-top:1px;font-size:11px;font-weight:800;line-height:20px;letter-spacing:0;color:#ffffff;text-transform:uppercase;}
 </style>
 </head>
 <body>
