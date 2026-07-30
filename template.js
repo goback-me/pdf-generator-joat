@@ -26,7 +26,7 @@ function buildReportHtml(data) {
 <head>
 <meta charset="UTF-8">
 <style>
-  @page { size: A4; margin: 0; }
+  @page { size: 8.27in 11.69in; margin: 0; }
   html,body{width:100%;}
   *{box-sizing:border-box;}
   body{
@@ -50,35 +50,35 @@ function buildReportHtml(data) {
   .review-cell{display:inline-block;vertical-align:middle;text-align:center;font-size:9.5px;font-weight:500;color:#fff;line-height:1.3;margin-right:36px;}
   .review-badge-cell{text-align:center;}
 
-  .hero{background:#f3faf9;padding:10px 60px 6px;text-align:center;}
+  .hero{background:#f3faf9;padding:2px 60px 2px;text-align:center;}
   .eyebrow-pill{
     display:inline-block;background:#fff4e5;color:#b4532d;font-size:25.1px;font-weight:800;
     line-height:28.95px;letter-spacing:-0.04em;text-align:center;text-transform:capitalize;
-    padding:4px 26px;border-radius:20px;margin-bottom:14px;
+    padding:4px 26px;border-radius:20px;margin-bottom:6px;
   }
-  .price-value{font-size:105.46px;font-weight:800;line-height:117.08px;letter-spacing:-0.08em;text-align:center;color:#012a67;margin-bottom:16px;}
-  .price-note{font-size:27.82px;font-weight:400;line-height:40.14px;letter-spacing:-0.02em;text-align:center;color:#001636;max-width:960px;margin:0 auto 48px;}
-  .greeting{font-size:22.82px;font-weight:400;line-height:31.1px;letter-spacing:-0.02em;text-align:center;color:#000;max-width:980px;margin:0 auto;}
+  .price-value{font-size:105.46px;font-weight:800;line-height:85px;letter-spacing:-0.08em;text-align:center;color:#012a67;margin-bottom:8px;}
+  .price-note{font-size:27.82px;font-weight:400;line-height:40.14px;letter-spacing:-0.02em;text-align:center;color:#001636;max-width:960px;margin:0 auto 6px;}
+  .greeting{font-size:22.82px;font-weight:400;line-height:26px;letter-spacing:-0.02em;text-align:center;color:#000;max-width:980px;margin:0 auto;}
 
   .cta-block{background:#f3faf9;text-align:center;padding:0 56px 0;}
   .cta-pill{
-    display:block;width:100%;background:#299230;border-radius:26px;padding:20px 20px 24px;
-    position:relative;z-index:2;margin-bottom:-55px;text-decoration:none;
+    display:block;width:100%;background:#299230;border-radius:26px;padding:10px 20px 12px;
+    position:relative;z-index:2;margin-bottom:-30px;text-decoration:none;
   }
-  .cta-save{font-family:'Poppins','Liberation Sans','Arial',sans-serif;font-weight:400;font-size:18.37px;line-height:21.95px;letter-spacing:0;text-align:center;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:15px;}
+  .cta-save{font-family:'Poppins','Liberation Sans','Arial',sans-serif;font-weight:400;font-size:18.37px;line-height:21.95px;letter-spacing:0;text-align:center;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:6px;}
   .cta-main{font-family:'Poppins','Liberation Sans','Arial',sans-serif;font-weight:800;font-size:39.69px;line-height:39.91px;letter-spacing:0;text-align:center;text-transform:uppercase;color:#fff;}
 
-  .dark-section{background:#022355;padding:80px 40px 55px;}
-  .info-card{background:#001636;border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:18px 30px 20px;margin-bottom:14px;}
+  .dark-section{background:#022355;padding:40px 40px 4px;}
+  .info-card{background:#001636;border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:6px 30px 8px;margin-bottom:4px;}
   .info-card:last-child{margin-bottom:0;}
-  .info-card h2{font-size:38.45px;font-weight:800;line-height:45.98px;letter-spacing:-0.02em;color:#fff;margin:0 0 10px;}
-  .info-line{font-size:15.69px;font-weight:500;line-height:29.25px;letter-spacing:-0.02em;color:#fff;margin-bottom:8px;}
+  .info-card h2{font-size:38.45px;font-weight:800;line-height:36px;letter-spacing:-0.02em;color:#fff;margin:0 0 4px;}
+  .info-line{font-size:15.69px;font-weight:500;line-height:19px;letter-spacing:-0.02em;color:#fff;margin-bottom:3px;}
   .info-line:last-child{margin-bottom:0;}
   .info-line .accent{color:#04bcff;}
   .info-line .accent-alt{color:#06a8e5;}
   .info-line .body-text{color:#fff;font-weight:400;}
   ol.why-list{margin:0;padding:0;list-style:none;counter-reset:why;}
-  ol.why-list li{counter-increment:why;font-size:15.69px;font-weight:700;line-height:29.25px;letter-spacing:-0.02em;color:#04bcff;margin-bottom:8px;}
+  ol.why-list li{counter-increment:why;font-size:15.69px;font-weight:700;line-height:19px;letter-spacing:-0.02em;color:#04bcff;margin-bottom:3px;}
   ol.why-list li:last-child{margin-bottom:0;}
   ol.why-list li::before{content:counter(why) ". ";}
   ol.why-list li .body-text{color:#fff;font-weight:400;}
@@ -119,17 +119,17 @@ function buildReportHtml(data) {
 
     <div class="info-card">
       <h2 class="fw-extrabold">INCLUDED IN EVERY RENOVATION</h2>
-      <div class="info-line fw-medium">&#10003; <span class="accent fw-bold">Waterproofing:</span> <span class="body-text">full wet area waterproofing membrane, compliant to AS 3740</span></div>
-      <div class="info-line fw-medium">&#10003; <span class="accent fw-bold">Structural elements:</span> <span class="body-text">assessment and allowance for any structural adjustment required</span></div>
-      <div class="info-line fw-medium">&#10003; <span class="accent fw-bold">Design:</span> <span class="body-text">layout and finish design consultation</span></div>
-      <div class="info-line fw-medium">&#10003; <span class="accent fw-bold">Review:</span> <span class="body-text">quality check and sign-off before handover</span></div>
+      <div class="info-line fw-medium"><svg style="width:13px;height:13px;vertical-align:-1px;" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8.5L6 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <span class="accent fw-bold">Waterproofing:</span> <span class="body-text">full wet area waterproofing membrane, compliant to AS 3740</span></div>
+      <div class="info-line fw-medium"><svg style="width:13px;height:13px;vertical-align:-1px;" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8.5L6 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <span class="accent fw-bold">Structural elements:</span> <span class="body-text">assessment and allowance for any structural adjustment required</span></div>
+      <div class="info-line fw-medium"><svg style="width:13px;height:13px;vertical-align:-1px;" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8.5L6 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <span class="accent fw-bold">Design:</span> <span class="body-text">layout and finish design consultation</span></div>
+      <div class="info-line fw-medium"><svg style="width:13px;height:13px;vertical-align:-1px;" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8.5L6 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <span class="accent fw-bold">Review:</span> <span class="body-text">quality check and sign-off before handover</span></div>
     </div>
 
     <div class="info-card">
       <h2 class="fw-extrabold">BASED ON WHAT YOU TOLD US</h2>
-      <div class="info-line fw-medium">&#10003; <span class="accent fw-bold">Layout:</span> <span class="body-text">${layout}</span></div>
-      <div class="info-line fw-medium">&#10003; <span class="accent fw-bold">Tiles:</span> <span class="body-text">${tiles}</span></div>
-      <div class="info-line fw-medium">&#10003; <span class="accent-alt fw-bold">PC items (toilet, tapware, vanity):</span> <span class="body-text">${pcItems}</span></div>
+      <div class="info-line fw-medium"><svg style="width:13px;height:13px;vertical-align:-1px;" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8.5L6 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <span class="accent fw-bold">Layout:</span> <span class="body-text">${layout}</span></div>
+      <div class="info-line fw-medium"><svg style="width:13px;height:13px;vertical-align:-1px;" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8.5L6 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <span class="accent fw-bold">Tiles:</span> <span class="body-text">${tiles}</span></div>
+      <div class="info-line fw-medium"><svg style="width:13px;height:13px;vertical-align:-1px;" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8.5L6 11.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <span class="accent-alt fw-bold">PC items (toilet, tapware, vanity):</span> <span class="body-text">${pcItems}</span></div>
     </div>
 
     <div class="info-card">
